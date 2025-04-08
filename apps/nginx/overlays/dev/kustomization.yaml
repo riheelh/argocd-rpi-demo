@@ -1,3 +1,4 @@
+namespace: nginx-dev
 resources:
   - ../../base
 
