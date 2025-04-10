@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-dev
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/riheelh/argocd-rpi-demo.git
+    targetRevision: HEAD
+    path: apps/nginx/overlays/dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: nginx-dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
