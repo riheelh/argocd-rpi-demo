@@ -18,6 +18,10 @@ spec:
       serviceAccountName: ingress-nginx
       containers:
         - name: controller
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
           image: registry.k8s.io/ingress-nginx/controller:v1.12.1
           args:
             - /nginx-ingress-controller
