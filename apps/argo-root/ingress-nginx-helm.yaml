@@ -13,9 +13,9 @@ spec:
       values: |
         controller:
           ingressClassResource:
-            name: rpi-nginx
+            name: nginx
             enabled: true
-          ingressClass: rpi-nginx
+          ingressClass: nginx
           service:
             type: NodePort
             nodePorts:
