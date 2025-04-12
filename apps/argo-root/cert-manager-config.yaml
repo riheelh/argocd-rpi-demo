@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/<your-username>/<your-repo>.git
+    repoURL: https://github.com/riheelh/argocd-rpi-demo.git
     targetRevision: HEAD
     path: apps/cert-manager/config
   destination:
