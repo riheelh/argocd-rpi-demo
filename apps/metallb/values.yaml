@@ -1,0 +1,3 @@
+controller:
+  configInline:
+    peers: []
