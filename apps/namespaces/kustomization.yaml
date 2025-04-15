@@ -8,3 +8,4 @@ resources:
   - nginx-prod.yaml
   - cert-manager.yaml
   - metallb-system.yaml
+  - store-0002.yaml
