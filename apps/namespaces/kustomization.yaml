@@ -1,0 +1,10 @@
+# kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - whoami-dev.yaml
+  - whoami-prod.yaml
+  - nginx-dev.yaml
+  - nginx-prod.yaml
+  - cert-manager.yaml
+  - metallb-system.yaml
