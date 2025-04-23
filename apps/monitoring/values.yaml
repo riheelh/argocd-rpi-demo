@@ -1,0 +1,14 @@
+grafana:
+  ingress:
+    enabled: true
+    ingressClassName: nginx
+    hosts:
+      - grafana.localdev
+    tls:
+      - hosts:
+          - grafana.localdev
+        secretName: grafana-tls
+
+prometheus:
+  prometheusSpec:
+    retention: 2d
