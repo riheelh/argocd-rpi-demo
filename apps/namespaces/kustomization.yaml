@@ -9,4 +9,3 @@ resources:
   - cert-manager.yaml
   - metallb-system.yaml
   - store-0002.yaml
-  - monitoring.yaml
