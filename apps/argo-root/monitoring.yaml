@@ -14,7 +14,8 @@ spec:
     targetRevision: 58.7.2
     helm:
       valueFiles:
-        - apps/monitoring/values.yaml
+        - values.yaml
+    path: apps/monitoring
   syncPolicy:
     automated:
       selfHeal: true
